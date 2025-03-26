@@ -15,7 +15,7 @@ class User_old extends Model implements AuthenticatableContract, AuthorizableCon
 
     /**
      * The attributes that are mass assignable.
-     *
+     *...
      * @var string[]
      */
     protected $fillable = [
