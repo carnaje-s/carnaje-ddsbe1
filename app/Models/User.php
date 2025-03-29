@@ -8,7 +8,7 @@ class User extends Model
 {
     protected $table = 'tbl_user'; 
     protected $fillable = [
-        'username', 'password', 'gender'
+        'username', 'password', 'gender', 'jobid'
     ];
     
     public $timestamps = false;

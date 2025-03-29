@@ -27,7 +27,10 @@ class UserController extends Controller
     public function index()
     {
         $users = User::all();
-        return $this->successResponse($users);
+        return response()->json([
+            'data' => $users->values(),
+            'site' => 1
+        ]);
     }
 
     public function addUser(Request $request)
