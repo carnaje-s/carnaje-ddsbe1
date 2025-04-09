@@ -33,7 +33,7 @@ class Handler extends ExceptionHandler
     public function render($request, Throwable $exception)
     {
         // Handle specific exceptions here
-        
+
         if ($exception instanceof HttpException) {
             $code = $exception->getStatusCode();
             $message = Response::$statusTexts[$code];
